@@ -1,12 +1,11 @@
+
 .body {
     min-height: 100vh;
 }
 
-
 h3, h4 {
     display: inline;
 }
-
 
 .card {
     margin: 0 auto;
@@ -14,6 +13,23 @@ h3, h4 {
     padding-bottom: 10px;
 }
 
+.icon-cart {
+    padding-bottom: 3px;
+    padding-right: 2%;
+}
 .button {
     width: 100%;
 }
+
+@media (min-width: 375px) {
+    body::before {
+        content: "SM";
+    }
+}
+
+@media (min-width: 1440px) {
+    body::before {
+        content: "SM";
+    }
+}
+
