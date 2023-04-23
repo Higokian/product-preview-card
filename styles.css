@@ -1,11 +1,19 @@
+
+/* IMPORT FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
 
 body {
     font-family: 'Montserrat', sans-serif;
-    min-height: 100vh;
     background-color: hsl(30, 38%, 92%) !important;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
 }
 
+/* TEXT STYLES */
 p {
     font-size: 14px;
 }
@@ -14,11 +22,32 @@ h3, h4 {
     display: inline;
 }
 
+h4 {
+    font-weight: 500;
+    color: hsl(30, 38%, 92%);
+}
+
+.text-decoration-line-through {
+    margin-bottom: 13px;
+}
+
+.price {
+    font-family: 'Fraunces', serif;
+}
+
+.discount-price {
+    color: hsl(158, 36%, 37%) !important;
+    font-size: 35px;
+}
+
+.og-price {
+    display: inline-block;
+    font-size: 14px;
+}
+
+/* CARD STYLES */
 .card {
     font-family: 'Montserrat', sans-serif;
-    margin: 0 auto;
-    margin-top: 5vh;
-    padding-bottom: 10px;
     background-color: hsl(0, 0%, 100%) !important;
 }
 
@@ -32,31 +61,11 @@ h3, h4 {
     color:hsl(228, 12%, 48%) !important;
 }
 
-h4 {
-    font-weight: 500;
-    color: hsl(30, 38%, 92%);
-}
-
-.price {
-    font-family: 'Fraunces', serif;
-}
-
-.discount-price {
-    color: hsl(158, 36%, 37%) !important;
-    font-size: 40px;
-}
-
-.og-price {
-    display: block;
-    font-size: 14px;
-    margin-top: 10px;
-        
-}
-
 .icon-cart {
     padding-bottom: 3px;
     padding-right: 2%;
 }
+
 .btn {
     width: 100%;
     background-color: hsl(158, 36%, 37%) !important;
@@ -66,19 +75,39 @@ h4 {
     background-color: hsl(158, 37%, 24%) !important;
 }
 
-.text-decoration-line-through{
-    margin-top: 20px;
-}
-
+/* MEDIA QUERIES */
 @media (min-width: 375px) {
     body::before {
         content: "SM";
     }
+
+    .card {
+        width: 75%;
+        margin-top: 20px;
+    }
+
+    .product-image {
+        height: 300px
+    }
+
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 800px) {
     body::before {
-        content: "SM";
+        content: "LG";
     }
+
+    .card {
+        flex-direction: row !important;
+        max-width: 600px;
+    }
+    
+    .product-image {
+        width: 50%;
+        height: 100%;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+
 }
 
