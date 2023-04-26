@@ -39,17 +39,8 @@ h3 {
 }
 
 /* MEDIA QUERIES */
-@media (min-width: 375px) {
-    body::before {
-        content: "SM";
-    }
-}
 
 @media (min-width: 875px) {
-    body::before {
-        content: "LG";
-    }
-
     .container-lg {
         width: 45% !important;
         height: 50% !important;
