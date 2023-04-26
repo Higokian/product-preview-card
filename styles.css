@@ -33,6 +33,11 @@ h3 {
     border-top-right-radius: 0px !important;
 }
 
+.icon-link {
+    margin-right: 10px;
+    margin-bottom: 2px;
+}
+
 /* MEDIA QUERIES */
 @media (min-width: 375px) {
     body::before {
